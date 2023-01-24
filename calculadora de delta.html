@@ -1,0 +1,30 @@
+<script>
+
+	function pulalinha(){
+		document.write ("<br>");
+	}
+
+	function texto (frase){
+		document.write(frase);
+		pulalinha();
+	}
+
+	var numeroB = parseInt(prompt("entre com o número de B"));
+	var numeroA = parseInt(prompt("entre com o número de A"));
+	var numeroC = parseInt(prompt("entre com o número de C"));
+
+	function calculaDelta(b , c, a) {
+		return (b)*2 - 4*(a)*c
+	}
+
+	var deltaResultado = calculaDelta( numeroB , numeroA , numeroC);
+
+	texto("o resultado do seu Delta é " + deltaResultado);
+
+
+
+
+
+</script>
+
+
